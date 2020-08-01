@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         jav links on sukebei.nyaa.si 
+// @name         javdb4nyaa
 // @namespace    https://github.com/tonyattalin
-// @version      0.1
-// @description  Add references links for each torrents.
+// @version      0.1.1
+// @description  jav links on sukebei.nyaa.si 
 // @author       Tony Lin
 // @match        https://sukebei.nyaa.si/?*
 // ==/UserScript==
@@ -27,7 +27,7 @@
         var anchorTag = document.createElement('a');
         anchorTag.setAttribute('href', "https://javdb4.com/search?q=" + id);
         anchorTag.setAttribute('target', "_blank");
-        anchorTag.setAttribute('onclick', "window.open(this.href, '_blank', 'location=yes,height=800,width=800,scrollbars=yes,status=yes');");
+        anchorTag.setAttribute('onclick', "window.open(this.href, '_blank', 'location=yes,left=800,height=800,width=800,scrollbars=yes,status=yes');");
         anchorTag.innerHTML = "[" + id + "] ";
         return anchorTag;
     }
